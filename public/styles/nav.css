@@ -1,0 +1,39 @@
+.logo{
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+  font-family: Bungee;
+  font-size: 36px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 120px;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  width: 100vw;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+  position: fixed;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.right-nav > .fa-angle-double-down {
+  color: red;
+}
+
+/*
+120 pixels in height
+Full width of the viewport
+#4056A1 as its default background colour
+#FFFFFF as its default font colour
+<span> within the <nav> uses Bungee as its default font-family
+1.5ems of space on the right and left between the content and the edges
+*/

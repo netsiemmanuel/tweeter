@@ -1,0 +1,19 @@
+.text1{
+  width: 100%;
+}
+.new-tweet{
+  width: 50%;
+}
+.button{
+  font-family: Bungee;
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+.sep{
+  font-family: Bungee;
+  display: flex;
+  justify-content: space-between;
+}
+.class{
+  width: 90%;
+}
