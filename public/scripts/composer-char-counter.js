@@ -1,21 +1,18 @@
-$(document).ready(function() {
-  // --- our code goes here ---
-  console.log('hi')
-
-  let element = document.getElementById('tweet-text');
-  let characterCounter = document.getElementById("id");
-  const maxNumOfChars = 140;
-
-  function callback() {
-    
-      let numOfEnteredChars = element.value.length;
-      let counter = maxNumOfChars - numOfEnteredChars;
-      characterCounter.textContent = counter ;
-      if (counter < 0) {
-        characterCounter.style.color = "red";
-      }else {
-        characterCounter.style.color = "black";
-    }    
-  };
-  element.addEventListener('input', callback)
+//function that adjusts the char counter according to the number of chars entered 
+$(document).ready(function () {
+  $('#tweet-text').on('input', onInput)
 })
+
+function onInput() {
+  const length = $(this).val().length
+  let characterCounter = $('#tweet-text').siblings("div").children(".counter")
+    ;
+  const maxNumOfChars = 140;
+  let counter = maxNumOfChars - length;
+  characterCounter.text(counter)
+  if (counter < 0) {
+    characterCounter.css('color', 'red')
+  } else {
+    characterCounter.css('color', 'black')
+  }
+};

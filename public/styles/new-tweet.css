@@ -1,3 +1,4 @@
+/*layout for the new tweet features*/
 .text1{
   width: 100%;
 }
@@ -16,4 +17,9 @@
 }
 .class{
   width: 90%;
+  
+}
+.class:hover{
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+
 }

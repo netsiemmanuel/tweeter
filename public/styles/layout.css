@@ -23,11 +23,12 @@ body {
   font-size: 24px;
   font-family: Source Sans Pro;
 }
-
+/*Layout for the main section*/
 main {
   display: flex;
   justify-content: center;
   width: 90vw;
+  overflow-wrap: break-word;
 }
 .div1{
     margin-bottom: 40px;
@@ -51,9 +52,13 @@ main {
   border: medium solid rgb(93, 90, 90);
   width: 90%;
 }
+.inner:hover{
+  box-shadow: 10px 10px 5px black;
+
+
+}
 .line{
   border: medium solid rgb(91, 88, 88);
- /* border-width: 0 0 0.1em;*/
   border-color: rgb(96, 92, 92);
   width: 95%;
   margin-bottom: 0px;
@@ -67,7 +72,38 @@ main {
 .time{
   margin-top: 10px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.icons{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.fa-solid:hover{ 
+  color: yellowgreen;
+}
+.red{
+  color: red;
+}
+.hidden{
+  visibility: hidden;
+}
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .header{
+    width: 35%;
+    float: left;
+    align-items: center;
+    margin-top: 15%;
+ 
+  }
+  .container{
+    width: 65%;
+    float: right;
+    margin-top: 10%;
+  }
+}
